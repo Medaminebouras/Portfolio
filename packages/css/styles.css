@@ -9,6 +9,38 @@
   /* Change favorite color */
   --hue-color: 190; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
+
+  /* ======== REDESIGNED PORTFOLIO BUTTONS (VISUAL ONLY) ======== */
+
+.portfolio__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* space between buttons */
+}
+
+/* Make your existing buttons look more modern */
+.portfolio__button {
+  width: 100%;
+  max-width: 260px;
+  justify-content: space-between;
+  border-radius: 0.75rem;
+  background: linear-gradient(135deg, 
+    var(--first-color), 
+    var(--first-color-alt));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+/* Nice hover animation */
+.portfolio__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.18);
+}
+
+/* Make arrow slide smoothly */
+.portfolio__button:hover .button__icon {
+  transform: translateX(0.35rem);
+}
+
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
